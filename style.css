@@ -29,11 +29,26 @@ body {
 	align-items: center;
 	gap:  20px;
 }
+.notifications-total {
+	padding: 1px 10px;
+	border-radius: 5px;
+	background-color: hsl(219, 85%, 26%);
+	color: hsl(0, 0%, 100%);
+	font-weight: 800;
+}
+.btn {
+	cursor: pointer;
+	border: none;
+	color: hsl(219, 14%, 63%);
+	font-size: 16px;
+	background-color: inherit;
+}
+.btn:hover {
+	color:  hsl(219, 85%, 26%);
+}
 /****NOTIFICATIONS-USERS*/
 .notifications-users {
 	padding: 10px 20px;
-	/*width: 80%;
-	margin: 0 auto;*/
 }
 /****USERS-BOX****/
 .user-box {
@@ -46,8 +61,7 @@ body {
 .user-feedback-box {
 	display: flex;
 	align-items: center;
-	gap:  140px;
-	
+	gap:  165px;
 }
 .user-feedback {
 	display: flex;
@@ -66,27 +80,51 @@ body {
 	align-items: baseline;
 	gap:  10px;
 }
-/*h2 {
-	font-size: 14px;
-}*/
 .user-name {
 	font-size: 16px;
 	font-weight: 800;
+	cursor: pointer;
+}
+.user-name:hover {
+	color: hsl(219, 85%, 26%);
+}
+a {
+	text-decoration: none;
+	color: hsl(219, 85%, 26%);
+	font-weight: 800;
+}
+.first-link {
+	color: hsl(219, 12%, 42%);
+	font-weight: 800;
+}
+.first-link:hover {
+	color:  hsl(219, 85%, 26%);
+	
 }
 .user-box span {
 	font-weight: 500;
 	color: hsl(219, 14%, 63%);
 }
+.unread {
+	margin-left: 5px;
+}
+.when {
+	color:  hsl(219, 14%, 63%);
+}
 .private-msg-box {
 	padding: 10px;
 	border:  1px solid hsl(211, 68%, 94%);
-	margin: 0 0 30px 100px;
+	border-radius: 5px;
+	margin: 0 0 30px 90px;
+	cursor: pointer;
+}
+.private-msg-box:hover {
+	background-color: hsl(211, 68%, 94%) ;
 }
 .private-msg {
-	line-height: 2;
+	line-height: 1.5;
 	color: hsl(219, 14%, 63%);
 }
-
 
 /**ATTRIBUTION****/
 .attribution { 
@@ -98,8 +136,28 @@ body {
 }
 
 /***MEDIA QUERIES****/
-@media only screen and (max-width: 475px) {
+@media only screen and (max-width:  900px){
 	.main-container {
-		width: 90%;
+		width: 80%;
 	}
+	.user-feedback-box {
+		gap:  100px;
+	}
+}
+@media only screen and (max-width: 375px) {
+	.main-container {
+		width: 100%;
+		padding: 10px;
+		margin: 10px auto;
+	}
+	.notifications-heading {
+		gap:  5px;
+	}
+	.notifications-users {
+		padding: 10px 10px;
+	}
+	.user-feedback-box {
+		gap:  50px;
+	}
+
 }

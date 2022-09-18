@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,8 +12,6 @@
   <title>Frontend Mentor | Notifications page</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
-
-  
 </head>
 <body>
   <main class="main-container">
@@ -33,7 +31,7 @@
         <div class="user-feedback">
           <div class="user-content">
             <p class="user-name">Mark Webber 
-            <span>reacted to your recent post</span> <a href="#">My first tournament today!</a></p><span class="unread">*</span>
+            <span>reacted to your recent post</span> <a href="#" class="first-link"> My first tournament today!</a><span class="unread" style="color: red";>&#9913;</span></p>
           </div>
           <p class="when">1m ago</p>
         </div>
@@ -44,7 +42,7 @@
         <div class="user-feedback">
           <div class="user-content">
             <p class="user-name">Angela Gray
-            <span>followed you</span></p><span class="unread">*</span>
+            <span>followed you</span><span class="unread" style="color: red";>&#9913;</span></p>
           </div>
           <p class="when">5m ago</p>
         </div>
@@ -55,7 +53,7 @@
         <div class="user-feedback">
           <div class="user-content">
             <p class="user-name">Jacob Thompson
-            <span>has joined your group <a href="#">Chess Club</a></span></p><span class="unread">*</span>
+            <span>has joined your group <a href="#"> Chess Club</a></span><span class="unread" style="color: red";>&#9913;</span></p>
           </div>
           <p class="when">1 day ago</p>
         </div>
@@ -75,13 +73,6 @@
         <p class="private-msg">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
         I'm already having lots of fun and improving my game.</p>
       </div>
-
-    
-  
-
-   
-  
-  
 <!-- kimberly smith -->
       <div class="user-box">
         <img src="./assets/images/avatar-kimberly-smith.webp" alt="kimberley smith" class="img-user">
@@ -93,13 +84,10 @@
             </div>
             <p class="when">1 week ago</p>
           </div>
-          <img src="./assets/images/image-chess.webp" alt="image chess" class="img-user">
+          <a href="#">
+          <img src="./assets/images/image-chess.webp" alt="image chess" class="img-user"></a>
         </div>
       </div>
-      
-
-   
-  
 <!-- nathan peterson -->
       <div class="user-box">
         <img src="./assets/images/avatar-nathan-peterson.webp" alt="nathan petterson" class="img-user">
@@ -111,32 +99,22 @@
           <p class="when">2 weeks ago</p>
         </div>
       </div>
-   
-  
 <!-- anna kim -->
-   
-  
-    <div class="user-box">
+      <div class="user-box">
         <img src="./assets/images/avatar-anna-kim.webp" alt="anna kim" class="img-user">
         <div class="user-feedback">
           <div class="user-content">
             <p class="user-name">Anna Kim
-            <span>left the group <a href="#">Chess Club</a></span></p>
+            <span>left the group <a href="#"> Chess Club</a></span></p>
           </div>
           <p class="when">2 weeks ago</p>
         </div>
       </div>
     </section>
-
-
-  
-
-  
-</main>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">bc464</a>.
-  </div>
-</body>
+  </main>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">bc464</a>.
+    </div>
+  </body>
 </html>
